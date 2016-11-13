@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_create"
+        android:orderInCategory="100"
+        app:actionLayout="@layout/action_next_layout"
+        android:title=""
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_edit"
+        android:orderInCategory="100"
+        app:actionLayout="@layout/action_edit_layout"
+        android:title="" android:visible="false"
+        app:showAsAction="always" />
+</menu>

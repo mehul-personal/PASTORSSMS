@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+
+    <TextView
+        android:id="@+id/txvPackageTitle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#3ec3d5"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:id="@+id/llPackageDetail"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txvPackageName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#a8b0b3" />
+
+            <TextView
+                android:id="@+id/txvPackageAmount"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="5dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#a8b0b3" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imvArrow"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_next" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

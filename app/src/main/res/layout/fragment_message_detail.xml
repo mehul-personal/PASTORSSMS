@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    tools:context="com.pastors.pastorssms.MessageDetailFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txvMessageContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/message_bg"
+            android:inputType="textMultiLine"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="8dp"
+            android:paddingTop="5dp"
+            android:text="abdhgjdufjkdjghnfmnkfjnbhskghbdhgjgnbmfkfjdjjbkdjfjfjbjgjbjvjdujfhguysbvkbibjv"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+        <!-- TODO: Update blank fragment layout -->
+        <TextView
+            android:id="@+id/txvMessageDetailsDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/txvMessageContent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="12dp"
+            android:textColor="#888888" />
+    </LinearLayout>
+</RelativeLayout>

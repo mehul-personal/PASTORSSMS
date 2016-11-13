@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1ec3c5"
+    android:orientation="vertical"
+    tools:context="com.pastors.pastorssms.LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="PASTORS"
+                    android:textColor="#ffffff"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="SMS"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_profile_bg"
+                    android:scaleType="fitCenter" />
+
+                <ImageView
+                    android:id="@+id/imvUserImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:scaleType="fitCenter" />
+            </FrameLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_user" />
+
+                <EditText
+                    android:id="@+id/edtUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:hint="User Name"
+                    android:inputType="text"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#ffffff" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="#ffffff" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_phone" />
+
+                <EditText
+                    android:id="@+id/edtUserPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:hint="Phone"
+                    android:inputType="number"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#ffffff" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="#ffffff" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_mail" />
+
+                <EditText
+                    android:id="@+id/edtUserEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:hint="Email address"
+                    android:inputType="textEmailAddress"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#ffffff" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="#ffffff" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_login_password" />
+
+                <EditText
+                    android:id="@+id/edtPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#ffffff" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="#ffffff" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/txvMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:text="Male"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/rbFeMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp" />
+
+                <TextView
+                    android:id="@+id/txvFeMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Female"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llCardHolderInfo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:gravity="center_vertical"
+                    android:text="Card number"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edtCardNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/style_edittext_rounded_with_whitebg"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:maxLength="16"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:text="Cardholder name"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edtCardHolderName"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/style_edittext_rounded_with_whitebg"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:text="Cardholder address"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edtCardHolderAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/style_edittext_rounded_with_whitebg"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:text="Post Code/Zip Code"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edtCardHolderPostCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/style_edittext_rounded_with_whitebg"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:text="City"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edtCardHolderCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/style_edittext_rounded_with_whitebg"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:text="Country"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edtCardHolderCountry"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/style_edittext_rounded_with_whitebg"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:text="State"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edtCardHolderState"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/style_edittext_rounded_with_whitebg"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:text="Card Expiry Year"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edtCardYear"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/style_edittext_rounded_with_whitebg"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:text="Card Expiry Month"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edtCardMonth"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/style_edittext_rounded_with_whitebg"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:text="Card Expiry CVV"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edtCardCVV"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/style_edittext_rounded_with_whitebg"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:singleLine="true" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone">
+
+                    <Button
+                        android:id="@+id/btnCancel"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:background="#3b5998"
+                        android:text="Cancel"
+                        android:textAllCaps="false"
+                        android:textColor="#ffffff" />
+
+                    <Button
+                        android:id="@+id/btnMakePayment"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="#1ec3c5"
+                        android:text="Make Payment"
+                        android:textAllCaps="false"
+                        android:textColor="#ffffff" />
+                </RelativeLayout>
+
+                <fragment
+                    android:id="@+id/wallet_fragment"
+                    android:name="com.google.android.gms.wallet.fragment.SupportWalletFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+                <!--wallet:environment="test"
+                wallet:fragmentMode="buyButton"/>-->
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btnSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff"
+                android:text="@string/str_signup"
+                android:textAllCaps="false"
+                android:textColor="#1ec3c5"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/btnRedirectLogin"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff"
+                android:text="@string/str_login"
+                android:textAllCaps="false"
+                android:textColor="#1ec3c5"
+                android:textSize="22sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

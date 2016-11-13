@@ -1,0 +1,135 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.pastors.pastorssms.MainMenuFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!-- TODO: Update blank fragment layout -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#1ec3c5"
+                android:gravity="center"
+                android:text="@string/str_main_screen_text"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:text="Send A Group Text Message"
+                    android:textColor="#000000" />
+
+                <com.pastors.pastorssms.ExpandableHeightGridView
+                    android:id="@+id/ehgGroupList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:numColumns="2" />
+
+
+                <EditText
+                    android:id="@+id/edtPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext_style"
+                    android:hint="Phone Number(s)"
+                    android:inputType="number"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp" />
+
+                <EditText
+                    android:id="@+id/edtSubject"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext_style"
+                    android:hint="Subject Optional"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/edtMessages"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext_style"
+                    android:hint="Messages" android:gravity="top"
+                    android:maxLength="160"
+                    android:paddingLeft="5dp" android:paddingTop="5dp"
+                    android:paddingRight="5dp"
+                    android:singleLine="false" />
+
+                <TextView
+                    android:id="@+id/txvmsgchar"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:text="160 Remaining Characters"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Schedule Delivery"
+                    android:textColor="#000000" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+
+                    <EditText
+                        android:id="@+id/edtDeliveryTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/edittext_style"
+                        android:hint="Delivery time "
+                        android:paddingLeft="5dp"
+                        android:paddingRight="50dp" />
+
+                    <ImageView
+                        android:id="@+id/ivCalender"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="right|center_vertical"
+                        android:paddingRight="5dp"
+                        android:src="@drawable/calender" />
+
+                </FrameLayout>
+
+                <Button
+                    android:id="@+id/btnSave"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/button_style"
+                    android:text="+SEND"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

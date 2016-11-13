@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:orientation="vertical"
+    tools:context="com.pastors.pastorssms.ContactFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/search_input1">
+
+        <ImageButton
+            android:id="@+id/imbSearchCancle"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/cancel_search" />
+
+        <ImageButton
+            android:id="@+id/btnLeft"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_search" />
+
+        <EditText
+            android:id="@+id/edtSearch"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@id/imbSearchCancle"
+            android:layout_toRightOf="@id/btnLeft"
+            android:background="@null"
+            android:hint="Search for Friends..."
+            android:imeOptions="actionSearch"
+            android:singleLine="true" />
+    </RelativeLayout>
+<ListView
+    android:id="@+id/lvContactList"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
+</LinearLayout>

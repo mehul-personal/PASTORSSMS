@@ -1,0 +1,324 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.pastors.pastorssms.MainMenuFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!-- TODO: Update blank fragment layout -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#1ec3c5"
+            android:gravity="center"
+            android:text="@string/str_main_screen_text"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+        <ListView
+            android:id="@+id/lsvPackageSelection"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <ScrollView
+            android:id="@+id/svCardHolderList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/llCardHolderInfo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:gravity="center_vertical"
+                    android:text="Card number"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edtCardNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/style_edittext_rounded"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:maxLength="16"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:text="Cardholder name"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edtCardHolderName"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/style_edittext_rounded"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:text="Cardholder address"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edtCardHolderAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/style_edittext_rounded"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:text="Post Code/Zip Code"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edtCardHolderPostCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/style_edittext_rounded"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:text="City"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edtCardHolderCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/style_edittext_rounded"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:text="Country"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edtCardHolderCountry"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/style_edittext_rounded"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:text="State"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edtCardHolderState"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/style_edittext_rounded"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:text="Card Expiry Year"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edtCardYear"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/style_edittext_rounded"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:text="Card Expiry Month"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edtCardMonth"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/style_edittext_rounded"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:text="Card Expiry CVV"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edtCardCVV"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/style_edittext_rounded"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:singleLine="true" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="10dp">
+
+                    <Button
+                        android:id="@+id/btnCancel"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:background="#3b5998"
+                        android:text="Cancel"
+                        android:textAllCaps="false"
+                        android:textColor="#ffffff" />
+
+                    <Button
+                        android:id="@+id/btnMakePayment"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="#1ec3c5"
+                        android:text="Make Payment"
+                        android:textAllCaps="false"
+                        android:textColor="#ffffff" />
+                </RelativeLayout>
+
+                <fragment
+                    android:id="@+id/wallet_fragment"
+                    android:name="com.google.android.gms.wallet.fragment.SupportWalletFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <!--wallet:environment="test"
+                wallet:fragmentMode="buyButton"/>-->
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/llPaymentMethod"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imvVisa"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@null"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_visa" />
+
+                <TextView
+                    android:id="@+id/txvVisa"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:text="Visa"
+                    android:textColor="#888888"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+
+                android:background="#ccd0d4" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imvPaypal"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@null"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_paypal" />
+
+                <TextView
+                    android:id="@+id/txvPaypal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:text="Paypal"
+                    android:textColor="#888888"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+
+                android:background="#ccd0d4" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
